@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: maestria-integrador
+
+server:
+  port: 9096
+
+app:
+  external-service:
+    url: ${DATA_SERVICE_URL:http://localhost:8081/api/default}
